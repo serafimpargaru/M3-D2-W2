@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>TRAVEL Agency</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary shadow bg-body-tertiary sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" id="logo" href="#">
+          TRAVEL
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-airplane"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599"
+            />
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offerte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offerte della Settimana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Last Minute</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="btn btn-primary" id="card-btn">Accedi</a>
+          <a href="#" id="social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container text-center mt-5 d-flex flex-column gap-5">
+      <div
+        class="card text-bg-dark rounded-4 overflow-hidden border border-0 shadow-lg bg-body-tertiary rounded"
+      >
+        <img
+          src="https://www.rainbowworldtours.com/blog/wp-content/uploads/2017/11/Advice-That-Will-Help-You-With-Your-Travels.jpg"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <h1 class="card-title" id="titles">TRAVEL Agency S.r.l.</h1>
+          <p class="card-text">
+            Se vuoi viaggiare in tutto il mondo a prezzi accessibili, la scelta
+            giusta siamo noi!
+          </p>
+          <p class="card-text">
+            <small
+              >Mer maggiorni dettagli riguardo alle offerte, non esitare a
+              contattarci ai nostri canali social che troverai in fondo alla
+              pagina.</small
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <h3 id="titles">OFFERTE DELLA SETTIMANA</h3>
+        <div
+          class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4"
+        >
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/CAPPADOCIA_TURCHIA-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Istanbul e Cappadocia</h5>
+                <p class="card-text">
+                  Tour a date fisse tutto l'anno Cappadocia e Istanbul, camini
+                  delle fate e tour in mongolfiera
+                </p>
+                <p><b>A partire da € 1096</b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/AdobeStock_216796675.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Week-end a ISTANBUL</h5>
+                <p class="card-text">
+                  TOUR DI ISTANBUL, PALAZZO TOPKAPI, MOSCHEA BLU, SANTA SOFIA,
+                  TURCHIA
+                </p>
+                <p><b>A partire da € € 823</b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/NIZWA_MOSCHEA-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">OMAN, i tesori del sultano</h5>
+                <p class="card-text">
+                  VIAGGIO OMAN TOUR MUSCAT WAHIBA SANDS NIZWA VOLO ROMA
+                  FIUMICINO DOHA
+                </p>
+                <p><b>A partire da € 1950 </b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/TAJ-MAHAL-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">INDIA, La rosa del deserto</h5>
+                <p class="card-text">
+                  INDIA D'AUTORE LA ROSA DEL DESERTO MAGICO RAJASTAN VIAGGIO A
+                  JAIPUR JODHPUR
+                </p>
+                <p><b>A partire da € 1950 </b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/CAPPADOCIA_TURCHIA-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Istanbul e Cappadocia</h5>
+                <p class="card-text">
+                  Tour a date fisse tutto l'anno Cappadocia e Istanbul, camini
+                  delle fate e tour in mongolfiera
+                </p>
+                <p><b>A partire da € 1096</b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/AdobeStock_216796675.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Week-end a ISTANBUL</h5>
+                <p class="card-text">
+                  TOUR DI ISTANBUL, PALAZZO TOPKAPI, MOSCHEA BLU, SANTA SOFIA,
+                  TURCHIA
+                </p>
+                <p><b>A partire da € € 823</b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/11/NIZWA_MOSCHEA-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">OMAN, i tesori del sultano</h5>
+                <p class="card-text">
+                  VIAGGIO OMAN TOUR MUSCAT WAHIBA SANDS NIZWA VOLO ROMA
+                  FIUMICINO DOHA
+                </p>
+                <p><b>A partire da € 1950 </b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/TAJ-MAHAL-1.jpeg"
+                class="card-img-top h-50"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">INDIA, La rosa del deserto</h5>
+                <p class="card-text">
+                  INDIA D'AUTORE LA ROSA DEL DESERTO MAGICO RAJASTAN VIAGGIO A
+                  JAIPUR JODHPUR
+                </p>
+                <p><b>A partire da € 1950 </b></p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill"
+                  id="card-btn"
+                >
+                  Scopri il viaggio
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 id="titles">WELCOME SUMMER</h3>
+        <div
+          class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-6 g-4"
+        >
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_561878744-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ALGERIA classica e il Grande Erg</h5>
+                <p class="card-text">
+                  Il deserto algerino: un viaggio alla scoperta della natura e
+                  della cultura
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/LISBONA-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Il cuore del PORTOGALLO</h5>
+                <p class="card-text">
+                  TOUR DEL PORTOGALLO CON TAPPA A LISBONA, OBIDOS, NAZARE,
+                  FATIMA, BATALHA, TOMAR E COIMBRA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_289571490-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tour CINA Classica</h5>
+                <p class="card-text">
+                  Tour guidato della Cina nelle sue mete più importanti
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_52380115-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Capodanno in Sicilia ALL INCLUSIVE</h5>
+                <p class="card-text">
+                  Capodanno in Sicilia Cenone di fine anno Incluso
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_122035532-3-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  ARGENTINA e PATAGONIA, alla scoperta della fine del Mondo
+                </h5>
+                <p class="card-text">
+                  L'Argentina e la Patagonia offrono esperienze uniche...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_185387603-4-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alla scoperta della TANZANIA</h5>
+                <p class="card-text">
+                  "Come un dipinto vivente, il Vietnam incanta con le sue risaie
+                  verdeggianti, le sue montagne avvolte nella nebbia e le sue
+                  città pulsanti di vita.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_561878744-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ALGERIA classica e il Grande Erg</h5>
+                <p class="card-text">
+                  Il deserto algerino: un viaggio alla scoperta della natura e
+                  della cultura
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/LISBONA-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Il cuore del PORTOGALLO</h5>
+                <p class="card-text">
+                  TOUR DEL PORTOGALLO CON TAPPA A LISBONA, OBIDOS, NAZARE,
+                  FATIMA, BATALHA, TOMAR E COIMBRA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_289571490-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tour CINA Classica</h5>
+                <p class="card-text">
+                  Tour guidato della Cina nelle sue mete più importanti
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_52380115-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Capodanno in Sicilia ALL INCLUSIVE</h5>
+                <p class="card-text">
+                  Capodanno in Sicilia Cenone di fine anno Incluso
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_122035532-3-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  ARGENTINA e PATAGONIA, alla scoperta della fine del Mondo
+                </h5>
+                <p class="card-text">
+                  L'Argentina e la Patagonia offrono esperienze uniche...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://www.viaggiforza7.it/storage/2023/10/AdobeStock_185387603-4-1.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alla scoperta della TANZANIA</h5>
+                <p class="card-text">
+                  "Come un dipinto vivente, il Vietnam incanta con le sue risaie
+                  verdeggianti, le sue montagne avvolte nella nebbia e le sue
+                  città pulsanti di vita.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-none d-sm-none d-md-block">
+        <h3 id="titles">OFFERTA DEL GIORNO</h3>
+        <div
+          class="card mb-3 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+        >
+          <img
+            src="https://www.viaggiforza7.it/storage/2023/11/AdobeStock_410313336-1-2.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Gran Tour della TURCHIA, Efeso, Istanbul e Cappadocia
+            </h5>
+            <p class="card-text">
+              TOUR DELLA TURCHIA, ALLA SCOPERTA DI EFESO, IZMIR, PAMMUKALE,
+              CAPPADOCIA E ISTANBUL, CAPITALE DELLA TURCHIA.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary rounded-pill"
+              id="card-btn"
+            >
+              Vai all'Offerta
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 id="titles">LAST MINUTE</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/CIUDADES/7087.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sharm el Sheikh</h5>
+                <p class="card-text">Amar Sina Egyptian Village</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/ZONAS/2428.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tenerife</h5>
+                <p class="card-text">Hotel Marte</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/CIUDADES/1149.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Budapest</h5>
+                <p class="card-text">Fortuna Boat Hotel And Restaurant</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/CIUDADES/27007567.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">New York</h5>
+                <p class="card-text">Night Hotel Broadway</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/CIUDADES/4365.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Londra</h5>
+                <p class="card-text">London Brentford</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="card-effect">
+            <div
+              class="card h-100 rounded-4 overflow-hidden border border-0 shadow bg-body-tertiary rounded"
+            >
+              <img
+                src="https://cdn.logitravel.it/wsimgresize/resize/crop/400/205///cdn.logitravel.it//contenidos/fotos/ZONAS/14606.jpg?jpegQuality=85"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zanzibar</h5>
+                <p class="card-text">Filao Beach Resort by Sansi</p>
+              </div>
+              <div class="card-footer">
+                <small id="sales">-30% di sconto Black Friday</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 id="titles">TESTIMONIALS</h3>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner overflow-visible">
+
+            <div class="carousel-item active">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Carlo C.</h5>
+                      <hr>
+                      <p class="card-text">Tutto molto bello, tutto molto interessante...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Rodolfo98</h5>
+                      <hr>
+                      <p class="card-text">Ottimo servizio, ottime cameriere 😍😍😍</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Giusi La Giusi </h5>
+                      <hr>
+                      <p class="card-text">Ottimo servizio, personale super gentile.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item active">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Benedetta Parodi</h5>
+                      <hr>
+                      <p class="card-text">Ottima cucina</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Guy Fawkes</h5>
+                      <hr>
+                      <p class="card-text">Bellissimo edificio! 💣💣💣</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Jennifer L.</h5>
+                      <hr>
+                      <p class="card-text">Bellissimo!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item active">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Fran_cesco</h5>
+                      <hr>
+                      <p class="card-text">Voglio vivere alle Maldive! 🤩</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Serena Agitato</h5>
+                      <hr>
+                      <p class="card-text">Troppa strada da fare a piedi. 😫🤦‍♀️</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 rounded-4 border border-0 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                      <h5 class="card-title">Gretel</h5>
+                      <hr>
+                      <p class="card-text">Tutto fatto di cioccolato!!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="card" id="footer">
+      <div class="card-header"><b>TRAVEL S.r.l.</b></div>
+      <div class="card-body">
+        <p class="card-text">
+          Via Aurelia, 338 - 57016 Rosignano Solvay (LI) REA LI 72077 - P. IVA
+          IT00725960496 Cap. Soc. € 135.493,00 I.V.
+        </p>
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <a href="#" class="btn btn-primary" id="card-btn">Contattaci</a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <a href="#" id="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+            <a href="#" id="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+            <a href="#" id="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-twitter-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+                />
+              </svg>
+            </a>
+            <a href="#" id="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a class="navbar-brand" id="logo" href="#">
+            TRAVEL
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-airplane"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599"
+              />
+            </svg>
+          </a>
+  
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
