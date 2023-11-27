@@ -25,12 +25,6 @@ body {
   transform: scale(1.05);
 }
 
-#titles {
-  color: white;
-  font-weight: bolder;
-  text-shadow: #BD0100 1px 0 10px;
-}
-
 #sales {
   color: #BD0100;
   font-weight: bold;
@@ -46,9 +40,4 @@ body {
     margin-top: 50px;
     background-color: transparent;
     backdrop-filter: blur(10px);
-}
-
-#testimonial {
-  background-color: transparent;
-  /* backdrop-filter: blur(10px); */
 }
